@@ -1,0 +1,25 @@
+:root{
+    --cor1: #F0E8D1;
+    --cor2: #EDDECA;
+    --cor3: #A89E7D;
+    --cor4: #A3937C;
+    --cor5: #CEDBF0;
+}
+
+
+body{
+    background-color: var(--cor2);
+}
+
+section{
+    background-color: white;
+    width: 500px;
+    padding: 20px 10px 20px 10px;
+    margin: 10px 10px;
+    border: 2px solid var(--cor4);
+    border-radius: 10px;
+}
+
+p{
+    font-weight: bold;
+}
