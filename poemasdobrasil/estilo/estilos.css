@@ -1,3 +1,10 @@
+@charset "UTF-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
 :root{
     --cor1: #F0E8D1;
     --cor2: #EDDECA;
@@ -7,13 +14,20 @@
 }
 
 
-body{
+html, body{
+    min-height: 100vh;
     background-color: var(--cor2);
+}
+
+header{
+    background-color: var(--cor4);
+    color: var(--cor1);
+    text-align: center;
 }
 
 section{
     background-color: white;
-    width: 500px;
+    max-width: 500px;
     padding: 20px 10px 20px 10px;
     margin: 10px 10px;
     border: 2px solid var(--cor4);
@@ -23,3 +37,4 @@ section{
 p{
     font-weight: bold;
 }
+
