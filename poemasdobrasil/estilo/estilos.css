@@ -3,6 +3,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    font-size: 1em;
 }
 
 :root{
@@ -11,8 +12,16 @@
     --cor3: #706555;
     --cor4: #CEDBF0;
     --cor5: #3F5270;
-}
 
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Roboto', sans-serif;
+    --fonte3: 'Rubik', sans-serif;
+
+}
+/*Fonte2*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*Fonte3*/
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html, body{
     min-height: 100vh;
@@ -29,16 +38,34 @@ header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /*Letras maiúsculas com as primeiras maiores*/
     /*text-transform: uppercase; Coloca tudo em letra maiúscula*/
+    font-size: 10vw; /*10% da viewportwidth - p/ se adequar ao tamanho da janela*/
 }
 
 header > p{
     padding-bottom: 50px;
-    font: normal 12px Arial, Verdana, serif;
+    font: normal 12px var(--fonte1);
 }
 
 section{
     padding-top: 10vh;
     padding-bottom: 10vh;
+    line-height: 1.5em;
+    padding-left: 30px;
+    font-family: var(--fonte2);
+    font-size: 3vw;
+
+}
+
+section h2{
+    margin-bottom: 10px;
+    font-family: var(--fonte3);
+    font-weight: 900;
+}
+
+section.imagem > p, section.imagem > h2{
+    display: inline-block; /*caixa que de adapta ao tamanho do conteúdo*/
+    padding: 5px;
+    background-color: #322d269d;
 }
 
 section.normal{
@@ -53,7 +80,7 @@ section.imagem{
 
 footer{
     color: var(--cor1);
-    background-color: var(--cor4);
+    background-color: var(--cor3);
     text-align: center;
     margin: 10px 0px 10px 0px;
     padding: 10px;
