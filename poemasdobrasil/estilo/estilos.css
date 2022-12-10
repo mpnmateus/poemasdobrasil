@@ -7,9 +7,9 @@
 }
 
 :root{
-    --cor1: #F0D8B6;
+    --cor1: #fef6ec;
     --cor2: #A3937C;
-    --cor3: #706555;
+    --cor3: #50493d;
     --cor4: #CEDBF0;
     --cor5: #3F5270;
 
@@ -52,7 +52,7 @@ section{
     line-height: 1.5em;
     padding-left: 30px;
     font-family: var(--fonte2);
-    font-size: 3vw;
+    font-size: 2.5vw;
 
 }
 
@@ -63,9 +63,11 @@ section h2{
 }
 
 section.imagem > p, section.imagem > h2{
-    display: inline-block; /*caixa que de adapta ao tamanho do conteúdo*/
+    max-width: 500px;
+    /*display: inline-block; /*caixa que de adapta ao tamanho do conteúdo */
     padding: 5px;
     background-color: #322d269d;
+    text-shadow: 1px 1px 0px black;
 }
 
 section.normal{
@@ -73,9 +75,39 @@ section.normal{
     color: var(--cor3);
 }
 
+section.normal > p, section.normal > h2{
+    max-width: 500px;
+}
+
 section.imagem{
     background-color: var(--cor3);
     color: var(--cor1);
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.612); /*inset: sombra para dentro*/
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section#img01{
+    background-image: url('../imagens/CDA-full.jpg');
+    background-position: left top;
+    
+}
+
+section#img02{
+    background-image: url('../imagens/FG-full.jpg');
+    background-position: left top;
+}
+section#img03{
+    background-image: url('../imagens/CM-full.jpg');
+    background-position: left top;
+}
+section#img04{
+    background-image: url('../imagens/PL-full.jpg');
+    background-position: left top;
+}
+section#img05{
+    background-image: url('../imagens/MQ-full.jpg');
+    background-position: left top;
 }
 
 footer{
