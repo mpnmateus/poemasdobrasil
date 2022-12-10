@@ -47,8 +47,8 @@ header > p{
 }
 
 section{
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
     line-height: 1.5em;
     padding-left: 30px;
     padding-right: 30px;
@@ -106,7 +106,7 @@ section#img03{
 }
 section#img04{
     background-image: url('../imagens/PL-full.jpg');
-    background-position: left top;
+    background-position: center top;
 }
 section#img05{
     background-image: url('../imagens/MQ-full.jpg');
@@ -119,6 +119,7 @@ footer{
     text-align: center;
     margin: 10px 0px 10px 0px;
     padding: 10px;
+    font: normal 12px var(--fonte1);
 }
 
 footer a {
